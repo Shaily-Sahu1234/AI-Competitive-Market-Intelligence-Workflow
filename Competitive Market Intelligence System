@@ -10,10 +10,10 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "✅ Dataset Loaded Successfully\n",
+      " Dataset Loaded Successfully\n",
       "============================================================\n",
       "\n",
-      "📊 DATASET OVERVIEW\n",
+      " DATASET OVERVIEW\n",
       "------------------------------------------------------------\n",
       "Shape (Rows, Columns): (14, 7)\n",
       "\n",
@@ -30,7 +30,7 @@
       "AI_Intensity     object\n",
       "dtype: object\n",
       "\n",
-      "🔍 MISSING VALUES\n",
+      "MISSING VALUES\n",
       "------------------------------------------------------------\n",
       "Company          0\n",
       "Segment          0\n",
@@ -41,7 +41,7 @@
       "AI_Intensity     0\n",
       "dtype: int64\n",
       "\n",
-      "📌 SEGMENT DISTRIBUTION\n",
+      " SEGMENT DISTRIBUTION\n",
       "------------------------------------------------------------\n",
       "Segment\n",
       "Preventive Health AI                   1\n",
@@ -60,7 +60,7 @@
       "Health Recommendation Platform         1\n",
       "Name: count, dtype: int64\n",
       "\n",
-      "🤖 AI INTENSITY DISTRIBUTION\n",
+      "AI INTENSITY DISTRIBUTION\n",
       "------------------------------------------------------------\n",
       "AI_Intensity\n",
       "Medium        6\n",
@@ -68,7 +68,7 @@
       "Low-Medium    4\n",
       "Name: count, dtype: int64\n",
       "\n",
-      "🚀 STAGE DISTRIBUTION\n",
+      " STAGE DISTRIBUTION\n",
       "------------------------------------------------------------\n",
       "Stage\n",
       "Growth Stage        4\n",
@@ -87,10 +87,10 @@
     "# Load dataset from same folder\n",
     "df = pd.read_csv(\"ai_healthcare_competitive_intelligence_india_updated.csv\")\n",
     "\n",
-    "print(\"✅ Dataset Loaded Successfully\")\n",
+    "print(\" Dataset Loaded Successfully\")\n",
     "print(\"=\"*60)\n",
     "\n",
-    "print(\"\\n📊 DATASET OVERVIEW\")\n",
+    "print(\"\\n DATASET OVERVIEW\")\n",
     "print(\"-\"*60)\n",
     "print(\"Shape (Rows, Columns):\", df.shape)\n",
     "\n",
@@ -100,19 +100,19 @@
     "print(\"\\nData Types:\")\n",
     "print(df.dtypes)\n",
     "\n",
-    "print(\"\\n🔍 MISSING VALUES\")\n",
+    "print(\"\\n MISSING VALUES\")\n",
     "print(\"-\"*60)\n",
     "print(df.isnull().sum())\n",
     "\n",
-    "print(\"\\n📌 SEGMENT DISTRIBUTION\")\n",
+    "print(\"\\n SEGMENT DISTRIBUTION\")\n",
     "print(\"-\"*60)\n",
     "print(df[\"Segment\"].value_counts())\n",
     "\n",
-    "print(\"\\n🤖 AI INTENSITY DISTRIBUTION\")\n",
+    "print(\"\\n AI INTENSITY DISTRIBUTION\")\n",
     "print(\"-\"*60)\n",
     "print(df[\"AI_Intensity\"].value_counts())\n",
     "\n",
-    "print(\"\\n🚀 STAGE DISTRIBUTION\")\n",
+    "print(\"\\n STAGE DISTRIBUTION\")\n",
     "print(\"-\"*60)\n",
     "print(df[\"Stage\"].value_counts())"
    ]
@@ -127,7 +127,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "📊 SEGMENT SATURATION ANALYSIS\n",
+      " SEGMENT SATURATION ANALYSIS\n",
       "============================================================\n",
       "\n",
       "Number of Companies per Segment:\n",
@@ -167,7 +167,7 @@
       "Name: count, dtype: float64\n",
       "\n",
       "\n",
-      "🤖 AI INTENSITY SCORE MAPPING\n",
+      " AI INTENSITY SCORE MAPPING\n",
       "============================================================\n",
       "\n",
       "AI Score Added Successfully\n",
@@ -208,7 +208,7 @@
       "Name: AI_Score, dtype: float64\n",
       "\n",
       "\n",
-      "🚀 INNOVATION DENSITY (Total AI Score per Segment)\n",
+      " INNOVATION DENSITY (Total AI Score per Segment)\n",
       "============================================================\n",
       "Segment\n",
       "Genomic AI                             3.0\n",
@@ -228,7 +228,7 @@
       "Name: AI_Score, dtype: float64\n",
       "\n",
       "\n",
-      "📊 STRATEGIC SEGMENT SUMMARY\n",
+      " STRATEGIC SEGMENT SUMMARY\n",
       "============================================================\n",
       "                                     Company_Count  Average_AI_Score  \\\n",
       "Segment                                                                \n",
@@ -264,7 +264,7 @@
       "Pathology AI                                    3.0  \n",
       "Preventive Health AI                            3.0  \n",
       "\n",
-      "✅ Market Structure Intelligence Analysis Complete\n"
+      " Market Structure Intelligence Analysis Complete\n"
      ]
     }
    ],
@@ -279,7 +279,7 @@
     "# STEP 3 — Segment Saturation\n",
     "# ------------------------------\n",
     "\n",
-    "print(\"📊 SEGMENT SATURATION ANALYSIS\")\n",
+    "print(\" SEGMENT SATURATION ANALYSIS\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "segment_counts = df[\"Segment\"].value_counts()\n",
@@ -293,7 +293,7 @@
     "# STEP 4 — AI Intensity Mapping\n",
     "# ------------------------------\n",
     "\n",
-    "print(\"\\n\\n🤖 AI INTENSITY SCORE MAPPING\")\n",
+    "print(\"\\n\\n AI INTENSITY SCORE MAPPING\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "intensity_map = {\n",
@@ -311,7 +311,7 @@
     "# STEP 5 — Average AI Sophistication per Segment\n",
     "# ------------------------------\n",
     "\n",
-    "print(\"\\n\\n📈 AVERAGE AI SOPHISTICATION PER SEGMENT\")\n",
+    "print(\"\\n\\n AVERAGE AI SOPHISTICATION PER SEGMENT\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "avg_ai_per_segment = (\n",
@@ -326,7 +326,7 @@
     "# STEP 6 — Innovation Density (Total AI Power per Segment)\n",
     "# ------------------------------\n",
     "\n",
-    "print(\"\\n\\n🚀 INNOVATION DENSITY (Total AI Score per Segment)\")\n",
+    "print(\"\\n\\n INNOVATION DENSITY (Total AI Score per Segment)\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "innovation_density = (\n",
@@ -341,7 +341,7 @@
     "# STEP 7 — Combined Strategic View\n",
     "# ------------------------------\n",
     "\n",
-    "print(\"\\n\\n📊 STRATEGIC SEGMENT SUMMARY\")\n",
+    "print(\"\\n\\n STRATEGIC SEGMENT SUMMARY\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "segment_summary = pd.DataFrame({\n",
@@ -352,7 +352,7 @@
     "\n",
     "print(segment_summary)\n",
     "\n",
-    "print(\"\\n✅ Market Structure Intelligence Analysis Complete\")"
+    "print(\"\\n Market Structure Intelligence Analysis Complete\")"
    ]
   },
   {
@@ -365,7 +365,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "📊 SEGMENT INNOVATION SCORE (Average AI Sophistication)\n",
+      " SEGMENT INNOVATION SCORE (Average AI Sophistication)\n",
       "============================================================\n",
       "Segment\n",
       "Genomic AI                             3.0\n",
@@ -385,7 +385,7 @@
       "Name: AI_Score, dtype: float64\n",
       "\n",
       "\n",
-      "🏆 COMPETITIVE RANKING\n",
+      " COMPETITIVE RANKING\n",
       "============================================================\n",
       "                            Company                              Segment  \\\n",
       "0                       HealthifyMe                 Preventive Health AI   \n",
@@ -419,7 +419,7 @@
       "13       1.5            2                     2                1.8  \n",
       "9        2.0            2                     1                1.7  \n",
       "\n",
-      "✅ Competitive Scoring Model Complete\n"
+      " Competitive Scoring Model Complete\n"
      ]
     }
    ],
@@ -434,7 +434,7 @@
     "# STEP 5 — SEGMENT INNOVATION SCORE\n",
     "# ------------------------------------------\n",
     "\n",
-    "print(\"📊 SEGMENT INNOVATION SCORE (Average AI Sophistication)\")\n",
+    "print(\" SEGMENT INNOVATION SCORE (Average AI Sophistication)\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "segment_innovation_score = (\n",
@@ -495,7 +495,7 @@
     "\n",
     "df_ranked = df.sort_values(\"Competitive_Score\", ascending=False)\n",
     "\n",
-    "print(\"\\n\\n🏆 COMPETITIVE RANKING\")\n",
+    "print(\"\\n\\n COMPETITIVE RANKING\")\n",
     "print(\"=\"*60)\n",
     "\n",
     "print(df_ranked[[\n",
@@ -507,7 +507,7 @@
     "    \"Competitive_Score\"\n",
     "]])\n",
     "\n",
-    "print(\"\\n✅ Competitive Scoring Model Complete\")"
+    "print(\"\\n Competitive Scoring Model Complete\")"
    ]
   },
   {
@@ -520,10 +520,10 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "🔍 WHITE SPACE DETECTION ANALYSIS\n",
+      " WHITE SPACE DETECTION ANALYSIS\n",
       "======================================================================\n",
       "\n",
-      "📊 SEGMENT WHITE SPACE SUMMARY\n",
+      " SEGMENT WHITE SPACE SUMMARY\n",
       "                                     Company_Count  Average_AI_Score  \\\n",
       "Segment                                                                \n",
       "AI Health Assistant                              1               2.0   \n",
@@ -558,7 +558,7 @@
       "Pathology AI                                       1.0                1.0  \n",
       "Preventive Health AI                               0.0                0.0  \n",
       "\n",
-      "🚀 POTENTIAL WHITE SPACE SEGMENTS\n",
+      " POTENTIAL WHITE SPACE SEGMENTS\n",
       "                      Company_Count  Average_AI_Score  Early_Stage_Count  \\\n",
       "Segment                                                                    \n",
       "Genomic AI                        1               3.0                1.0   \n",
@@ -599,7 +599,7 @@
      "output_type": "stream",
      "text": [
       "\n",
-      "✅ White Space Detection Complete\n"
+      " White Space Detection Complete\n"
      ]
     }
    ],
@@ -611,7 +611,7 @@
     "import matplotlib.pyplot as plt\n",
     "import seaborn as sns\n",
     "\n",
-    "print(\"🔍 WHITE SPACE DETECTION ANALYSIS\")\n",
+    "print(\" WHITE SPACE DETECTION ANALYSIS\")\n",
     "print(\"=\"*70)\n",
     "\n",
     "# ------------------------------------------\n",
@@ -655,7 +655,7 @@
     "\n",
     "white_space_df = white_space_df.sort_values(\"Company_Count\")\n",
     "\n",
-    "print(\"\\n📊 SEGMENT WHITE SPACE SUMMARY\")\n",
+    "print(\"\\n SEGMENT WHITE SPACE SUMMARY\")\n",
     "print(white_space_df)\n",
     "\n",
     "# ------------------------------------------\n",
@@ -670,7 +670,7 @@
     "    (white_space_df[\"Average_AI_Score\"] >= 2.5)\n",
     "]\n",
     "\n",
-    "print(\"\\n🚀 POTENTIAL WHITE SPACE SEGMENTS\")\n",
+    "print(\"\\n POTENTIAL WHITE SPACE SEGMENTS\")\n",
     "print(white_space_candidates)\n",
     "\n",
     "# ==========================================\n",
@@ -701,7 +701,7 @@
     "plt.title(\"Segment Competitive & Innovation Heatmap\")\n",
     "plt.show()\n",
     "\n",
-    "print(\"\\n✅ White Space Detection Complete\")"
+    "print(\"\\n White Space Detection Complete\")"
    ]
   },
   {
@@ -1090,7 +1090,7 @@
      "output_type": "stream",
      "text": [
       "\n",
-      "✅ FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\n"
+      " FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\n"
      ]
     }
    ],
@@ -1240,7 +1240,7 @@
     "plt.xticks(rotation=45)\n",
     "plt.show()\n",
     "\n",
-    "print(\"\\n✅ FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\")"
+    "print(\"\\n FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\")"
    ]
   },
   {
@@ -1392,7 +1392,7 @@
      "output_type": "stream",
      "text": [
       "\n",
-      "✅ FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\n"
+      " FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\n"
      ]
     }
    ],
@@ -1550,7 +1550,7 @@
     "plt.tight_layout()\n",
     "plt.show()\n",
     "\n",
-    "print(\"\\n✅ FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\")"
+    "print(\"\\n FULL COMPETITIVE INTELLIGENCE SYSTEM COMPLETE\")"
    ]
   },
   {
